@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Responsiva</title>
+    <!-- Bootstrap CSS (via CDN) -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho com Navegação -->
+    <header class="bg-primary text-white text-center p-4">
+        <h1>Minha Página Web</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Corpo da página com Containers Bootstrap -->
+    <main class="container mt-4">
+        <!-- Seção 1 -->
+        <div class="container bg-light p-4 mb-4">
+            <h2>Seção 1</h2>
+            <p>Esta é a primeira seção da minha página. Aqui podemos adicionar informações interessantes sobre o site.</p>
+        </div>
+
+        <!-- Seção 2 -->
+        <div class="container bg-light p-4 mb-4">
+            <h2>Seção 2</h2>
+            <p>Esta é a segunda seção. Usando containers do Bootstrap, garantimos que tudo se ajusta corretamente.</p>
+        </div>
+
+        <!-- Seção 3 -->
+        <div class="container bg-light p-4 mb-4">
+            <h2>Seção 3</h2>
+            <p>A terceira seção está aqui. Tudo adaptado de forma responsiva usando classes do Bootstrap.</p>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center p-4">
+        <p>&copy; <span id="year"></span> - Desenvolvido por Gabriel Moraes.</p>
+    </footer>
+
+    <!-- Bootstrap JS (via CDN) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Script para atualizar o ano automaticamente -->
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
